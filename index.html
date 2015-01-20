@@ -13,18 +13,16 @@
 <body>
 
 <div class="bs-example">
-    <ul class="nav nav-pills" role="tablist">
+    <ul class="nav nav-pills" role="tablist" id="myDropdown">
         <li role="presentation" class="dropdown">
             <a href="#" class="dropdown-toggle menu-m" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 首页
                 <span class="arr"></span>
             </a>
-            <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Separated link</a></li>
+            <ul class="dropdown-menu sub-menu" role="menu" aria-labelledby="drop4">
+                <li role="presentation"><a role="menuitem"  href="">面条</a></li>
+                <li role="presentation"><a role="menuitem"  href="">方便面</a></li>
+                <li role="presentation"><a role="menuitem"  href="">兰州拉面</a></li>
             </ul>
         </li>
         <li role="presentation" class="dropdown">
@@ -32,12 +30,10 @@
                 关于
                 <span class="arr"></span>
             </a>
-            <ul  class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Separated link</a></li>
+            <ul  class="dropdown-menu sub-menu" role="menu" aria-labelledby="drop5">
+                <li role="presentation"><a role="menuitem"  href="">包子</a></li>
+                <li role="presentation"><a role="menuitem"  href="">馒头</a></li>
+                <li role="presentation"><a role="menuitem"  href="">饺子</a></li>
             </ul>
         </li>
         <li role="presentation" class="dropdown ">
@@ -45,12 +41,10 @@
                 产品
                 <span class="arr"></span>
             </a>
-            <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Separated link</a></li>
+            <ul id="menu2" class="dropdown-menu sub-menu" role="menu" aria-labelledby="drop5">
+                <li role="presentation"><a role="menuitem"  href="">苹果</a></li>
+                <li role="presentation"><a role="menuitem"  href="">香蕉</a></li>
+                <li role="presentation"><a role="menuitem"  href="">榴莲</a></li>
             </ul>
         </li>
 
@@ -59,7 +53,8 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-//            $('.dropdown-toggle').dropdown();
+
+        })
     });
 </script>
 </body>

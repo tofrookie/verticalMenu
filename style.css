@@ -7,6 +7,9 @@
  *
  * Designed and built with all the love in the world by @mdo and @fat.
 */
+.clear{
+    clear: both;
+}
 
 .dropdown .dropdown-toggle{
     width: 64px;
@@ -35,5 +38,21 @@
     margin-left: 5px;
     margin-right: 5px;
     background: #000000;
+}
+
+/*子菜单*/
+#myDropdown > li{
+    position: inherit;
+}
+.sub-menu{
+    top: auto;
+    left: auto;
+}
+.sub-menu > li{
+    float: left;
+}
+.sub-menu > li > a{
+    width: 54px;
+    white-space: normal;
 }
 
