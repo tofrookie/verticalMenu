@@ -21,11 +21,11 @@
     width: 0;
     height: 0;
     margin-left: 2px;
-    margin-top: 10px;
+    margin-top: 20px;
     vertical-align: middle;
-    border-bottom: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
 }
 /*主菜单*/
 .nav .menu-m{
@@ -34,7 +34,9 @@
     background: #000000;
     color: #ffffff;
     width: 64px;
-    padding: 25px 25px 15px 25px;
+    padding: 27px 25px 2px 25px;
+    font-family: KaiTi, "楷体", sans-serif;
+    /*font-size: 16px;*/
 }
 
 .nav > li:hover .arr{
@@ -44,7 +46,11 @@
 .nav > li:hover .dropdown-menu {
     display: block;
 }
-.nav > li > a:hover{
+.nav > li > a:hover,.nav > li > a:focus{
+    background-color: #8e6e5f;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #8e6e5f;
 }
 
@@ -58,7 +64,7 @@
     top: auto;
     left: auto;
     background-color: #000;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .sub-menu > li{
     float: left;
