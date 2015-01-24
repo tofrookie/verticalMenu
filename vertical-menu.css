@@ -1,0 +1,184 @@
+/*!
+ * vertical-menu v0.1
+ *
+ * Copyright 2015 ZhangZheng
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world x.
+*/
+
+
+
+/*
+.navbar .nav > li:hover .dropdown-menu {
+    display: block;
+}
+*/
+
+.hide{
+    display: none;
+}
+/*最小宽度800就是PC端*/
+@media all and (min-width: 800px) {
+.menu-toggle{
+    display: none;
+}
+.mn-pz{
+    /*position: inherit;*/
+    margin-top: 15px;
+    display: block;
+}
+/* 菜单箭头*/
+.arr {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 1px;
+    /*margin-top: 10px;*/
+    vertical-align: middle;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    top:91%;
+    position: absolute;
+}
+/*主菜单*/
+.nav > li{
+    margin-right: 20px;
+}
+.nav .menu-m{
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #000000;
+    color: #ffffff;
+    width: 64px;
+    padding: 0px 30px 0px 30px;
+    font-family: KaiTi, "楷体", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    height: 110px;
+    width: 80px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nav > li:hover .arr{
+    border-bottom-color: #fff
+}
+
+.nav > li:hover .dropdown-menu {
+    display: block;
+}
+.nav > li > a:hover{
+    background-color: #8e6e5f;
+}
+
+.nav > li > .open{
+    background-color: #8e6e5f;
+}
+
+.nav .dropdown{
+    position: inherit;
+}
+
+/*子菜单*/
+
+.sub-menu{
+    top: auto;
+    left: auto;
+    background-color: #000;
+    opacity: 0.7;
+}
+.sub-menu > li{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sub-menu > li > a{
+    width: 54px;
+    white-space: normal;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sub-menu > li > a:hover{
+    background-color: #ffffff;
+    color: #8e6e5f;
+}
+
+
+}
+/*最大宽度799就是移动端*/
+@media all and (max-width: 799px) {
+    .nav {
+        width: 100%;
+    }
+    .nav > li{
+        width: 100%;
+    }
+
+    .nav-pills > li + li {
+        margin: 0;
+    }
+
+    .nav > li > a{
+        width: 100%;
+        color: #ffffff;
+        font-family: KaiTi, "楷体", sans-serif;
+        background: #000000;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .nav > li > a:hover{
+        background-color: #8e6e5f;
+    }
+
+
+    /*.nav > li:active .dropdown-menu {*/
+        /*display: block;*/
+    /*}*/
+
+
+    .nav > li > .dropdown-menu {
+        position: relative;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.7;
+    }
+
+
+    .menu-toggle:before {
+        color: #333;
+        content: "≡";
+        font-family: "responsivenav", sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        left: 0;
+        line-height: 55px;
+        position: absolute;
+        text-align: center;
+        text-indent: 0;
+        text-transform: none;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        -moz-osx-font-smoothing: grayscale;
+        -moz-user-select: none;
+        float: right;
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        text-indent: -999px;
+        width: 60px;
+        z-index: 1000;
+        display: block;
+    }
+}
